@@ -7,4 +7,7 @@ nodejs prompts
 Python Prompts
 
 -- @workspace /new python appliation with addNumbers,subtractNumbers,multiplyNumbers and divideNumbers function with unit test cases
+   
+   pip install pytest
 
+   pytest tests/
