@@ -8,7 +8,7 @@ Implement error handling to handle division by zero scenarios.
 Write pytest test cases to validate the correctness of each operation.
 
 # File Management System in Python:
-Develop a Python application for file operations like creating, reading, updating, and deleting files.
+**@workspace /new** Develop a Python application for file operations like creating, reading, updating, and deleting files.
 Include functions to perform these operations on files.
 Write pytest test cases to ensure the proper functioning of file operations.
 
