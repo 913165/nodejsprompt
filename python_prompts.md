@@ -1,6 +1,6 @@
 # Python Prompts
 
-- @workspace /new Create a new Python application with `addNumbers`, `subtractNumbers`, `multiplyNumbers`, and `divideNumbers` functions, along with unit test cases.
+@workspace /new Create a new Python application with `addNumbers`, `subtractNumbers`, `multiplyNumbers`, and `divideNumbers` functions, along with unit test cases.
 
 # Basic Calculator in Python:
 **@workspace /new**  Create functions for addition, subtraction, multiplication, and division operations.
