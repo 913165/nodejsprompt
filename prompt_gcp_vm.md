@@ -1,6 +1,6 @@
 # Instructions for Creating a PostgreSQL Server VM and Firewall Rule
 
-## Create a PostgreSQL Server VM
+## Create a PostgreSQL Server VM (tested in Duet AI)
 
 To create a Ubuntu VM named `postgress-server-vm`, use the following `gcloud` command:
 
