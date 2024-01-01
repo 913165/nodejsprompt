@@ -27,10 +27,15 @@ gcloud compute instances create mysql-server-vm \
     --image-family=ubuntu-2204-lts \
     --image-project=ubuntu-os-cloud
     --zone=us-central1-a
+```
 
 # prompt : gcloud command create a fire wall named allow-mysql-access which allows port 3306
+
+```
 gcloud compute firewall-rules create allow-mysql-access --allow tcp:3306
+```
 
 # Adding Tags to the VM
+```
 gcloud compute instances add-tags mysql-server-vm --tags=allow-mysql-access
 ```
