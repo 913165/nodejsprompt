@@ -10,7 +10,7 @@ gcloud compute instances create postgress-server-vm \
   --image-project=ubuntu-os-cloud \
   --zone=us-central1-a
 
-# Create a Firewall Rule for PostgreSQL
+# prompt : command create a fire wall named postgress-server which allos port 5432
 gcloud compute firewall-rules create postgress-server --allow tcp:5432
 
 # Adding Tags to the VM
