@@ -4,13 +4,15 @@
 
 To create a Ubuntu VM named `postgress-server-vm`, use the following `gcloud` command:
 
+
 ```bash
+# prompt : gcloud command to create a ubuntu vm named postgress-server-vm
 gcloud compute instances create postgress-server-vm \
   --image-family=ubuntu-2004-lts \
   --image-project=ubuntu-os-cloud \
   --zone=us-central1-a
 
-# prompt : command create a fire wall named postgress-server which allos port 5432
+# prompt : gcloud command create a fire wall named postgress-server which allos port 5432
 gcloud compute firewall-rules create postgress-server --allow tcp:5432
 
 # Adding Tags to the VM
