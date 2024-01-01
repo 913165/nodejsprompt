@@ -18,8 +18,11 @@ gcloud compute firewall-rules create postgress-server --allow tcp:5432
 # Adding Tags to the VM
 gcloud compute instances add-tags postgress-server-vm --tags=postgress-server
 
+```
+
 ## Create a MySQL Server VM (tested in Duet AI)
 
+```bash
 gcloud compute instances create mysql-server-vm \
     --image-family=ubuntu-2204-lts \
     --image-project=ubuntu-os-cloud
@@ -30,3 +33,4 @@ gcloud compute firewall-rules create allow-mysql-access --allow tcp:3306
 
 # Adding Tags to the VM
 gcloud compute instances add-tags mysql-server-vm --tags=allow-mysql-access
+```
