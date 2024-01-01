@@ -1,6 +1,6 @@
-# Instructions for Creating a PostgreSQL Server VM and Firewall Rule
+## Instructions for Creating a PostgreSQL Server VM and Firewall Rule
 
-## Create a PostgreSQL Server VM (tested in Duet AI)
+### Create a PostgreSQL Server VM (tested in Duet AI)
 
 To create a Ubuntu VM named `postgress-server-vm`, use the following `gcloud` command:
 
@@ -20,7 +20,7 @@ gcloud compute instances add-tags postgress-server-vm --tags=postgress-server
 
 ```
 
-## Create a MySQL Server VM (tested in Duet AI)
+### Create a MySQL Server VM (tested in Duet AI)
 
 ```bash
 gcloud compute instances create mysql-server-vm \
@@ -35,7 +35,7 @@ gcloud compute instances create mysql-server-vm \
 gcloud compute firewall-rules create allow-mysql-access --allow tcp:3306
 ```
 
-# Adding Tags to the VM
+### Adding Tags to the VM
 ```
 gcloud compute instances add-tags mysql-server-vm --tags=allow-mysql-access
 ```
