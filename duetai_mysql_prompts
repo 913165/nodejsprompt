@@ -1,1 +1,13 @@
 
+# prompt : gcloud command to create a ubuntu vm named mysql-server-vm with tags allow-mysql-fw in uscentral 1 region
+gcloud compute instances create mysql-server-vm \
+  --image-family=ubuntu-2004-lts \
+  --image-project=ubuntu-os-cloud \
+  --zone=us-central1-a \
+  --tags=allow-mysql-fw
+
+# prompt : gcloud command create a fire wall named allow-mysql-fw which allows port 3306
+gcloud compute firewall-rules create allow-mysql-fw --allow tcp:3306
+
+# Adding Tags to the VM mysql-server-vm
+gcloud compute instances add-tags mysql-server-vm --tags=allow-mysql-fw
