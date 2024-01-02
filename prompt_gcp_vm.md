@@ -23,6 +23,7 @@ gcloud compute instances add-tags postgress-server-vm --tags=postgress-server
 ### Create a MySQL Server VM (tested in Duet AI)
 
 ```bash
+# prompt : gcloud command to create a ubuntu vm named mysql-server-vm in uscentral 1 region
 gcloud compute instances create mysql-server-vm \
     --image-family=ubuntu-2204-lts \
     --image-project=ubuntu-os-cloud
