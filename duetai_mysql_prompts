@@ -11,3 +11,7 @@ gcloud compute firewall-rules create allow-mysql-fw --allow tcp:3306
 
 # Adding Tags to the VM mysql-server-vm
 gcloud compute instances add-tags mysql-server-vm --tags=allow-mysql-fw
+
+# docker command to run latest mysql with root password root123
+docker run -d --name=mysql-container -e MYSQL_ROOT_PASSWORD=root123 mysql:latest
+
