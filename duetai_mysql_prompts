@@ -6,8 +6,8 @@ gcloud compute instances create mysql-server-vm \
   --zone=us-central1-a \
   --tags=allow-mysql-fw
 
-# prompt : gcloud command create a fire wall named allow-mysql-fw which allows port 3306
-gcloud compute firewall-rules create allow-mysql-fw --allow tcp:3306
+# prompt : gcloud command create a fire wall named allow-mysql-fw which allows port 3306 with target tags allow-mysql-fw
+gcloud compute firewall-rules create allow-mysql-fw --allow tcp:3306 --target-tags allow-mysql-fw
 
 # Adding Tags to the VM mysql-server-vm
 gcloud compute instances add-tags mysql-server-vm --tags=allow-mysql-fw
