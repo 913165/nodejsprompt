@@ -1,3 +1,5 @@
+**please give me gcloud command to create ubuntu vm wiht tags allow-mysql-fw and startup script to create mysql using dokcer with root password as root123 and port 3306**
+
 gcloud compute instances create mysql-instance \
     --image-family=ubuntu-2004-lts \
     --image-project=ubuntu-os-cloud \
